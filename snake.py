@@ -3,6 +3,7 @@ STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP, DOWN, LEFT, RIGHT = 90, 270, 180, 0
 
+
 class Snake:
     def __init__(self):
         self.segments = []
@@ -15,7 +16,6 @@ class Snake:
 
     def add_segment(self, position):
         tur = Turtle("square")
-        tur.shapesize(stretch_len=0.5, stretch_wid=0.5)
         tur.color("white")
         tur.penup()
         tur.goto(position)
